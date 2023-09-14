@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FiDollarSign } from 'react-icons/fi';
 import { BsFillBookFill } from 'react-icons/bs';
 
-const Card = ({card}) => {
+const Card = ({card, handleBookMarks}) => {
     const {cover, title, description, price, credit_hour} = card;
     return (
             <div>
@@ -25,7 +25,10 @@ const Card = ({card}) => {
                         </div>
 
                         <div className="card-actions">
-                            <button className="p-2 rounded-lg text-white bg-[#2F80ED] w-full">Select</button>
+                            <button 
+                            className="p-2 rounded-lg text-white bg-[#2F80ED] w-full" 
+                            onClick={()=> handleBookMarks(card)}
+                            >Select</button>
                         </div>
                     </div>
                 </div>
@@ -34,7 +37,8 @@ const Card = ({card}) => {
 };
 
 Card.propTypes = {
-    card: PropTypes.object.isRequired
+    card: PropTypes.object.isRequired,
+    handleBookMarks: PropTypes.func
 }
 
 export default Card;

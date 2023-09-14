@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
@@ -21,5 +22,8 @@ const Cards = ({handleBookMarks}) => {
     );
 };
 
+Cards.propTypes = {
+    handleBookMarks: PropTypes.func,
+}
 
 export default Cards;
