@@ -25,12 +25,17 @@ function App() {
         })
 
         const remaining = 20 - creditHour;
+        if(creditHour > 20){
+          toast.error('you cannot more than 20 credits courses')
+        }else{
+          setCreditHour(creditHour)
+          setRemainingCredit(remaining)
+  
+        const newBookMarkCard = [...bookMark, bookmark]
+        setBookMarks(newBookMarkCard)
+        }
 
-        setCreditHour(creditHour)
-        setRemainingCredit(remaining)
-
-      const newBookMarkCard = [...bookMark, bookmark]
-      setBookMarks(newBookMarkCard)
+       
     }
 
   }
