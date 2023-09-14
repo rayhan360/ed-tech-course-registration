@@ -1,17 +1,30 @@
 import { useState } from 'react'
+
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import Cards from './components/Cards/Cards'
 import Cart from './components/Cart/Cart'
 import Header from './components/Header/Header'
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   const [bookMark, setBookMarks] = useState([])
+  const [crediHour, setCreditHour] = useState(0)
 
   const handleBookMarks = bookmark => {
     const isExist = bookMark.find((item) => item.id === bookmark.id)
+
+    let creditHour = bookmark.credit_hour;
+
     if (isExist) {
-      alert('already added a carts')
+      toast('already added this course')
     } else {
+        bookMark.forEach(item => {
+          creditHour = crediHour + item.credit_hour;
+        })
+
+      setCreditHour(creditHour)
+
       const newBookMarkCard = [...bookMark, bookmark]
       setBookMarks(newBookMarkCard)
     }
@@ -23,8 +36,9 @@ function App() {
       <Header></Header>
       <div className='md:flex'>
         <Cards handleBookMarks={handleBookMarks}></Cards>
-        <Cart bookMark={bookMark}></Cart>
+        <Cart bookMark={bookMark} creditHour={crediHour}></Cart>
       </div>
+      <ToastContainer></ToastContainer>
     </>
   )
 }
