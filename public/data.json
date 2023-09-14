@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/hLpCssX/Rectangle-2-2.png",
+      "title": "Introduction to C Programming",
+      "description": "Learn the fundamentals of C programming and start your coding journey. Explore syntax, data types, and basic algorithms in this comprehensive course. Master the art of coding with C!",
+      "price": 15000,
+      "credit_hour": 3
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/TqVSLp3/Rectangle-2-3.png",
+      "title": "Introduction to Algorithms",
+      "description": "Dive deep into the world of algorithms and problem-solving techniques. Master the art of algorithm design and analysis in this challenging course. Become a problem-solving expert!",
+      "price": 20000,
+      "credit_hour": 4
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/MMPp39b/Rectangle-2-4.png",
+      "title": "Introduction to C++ for DSA",
+      "description": "Build a strong foundation in C++ for data structures and algorithms. Learn key concepts, pointers, and memory management. Unlock the power of C++ for DSA!",
+      "price": 18000,
+      "credit_hour": 5
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/gWszWmN/Rectangle-3.png",
+      "title": "Basic Data Structures",
+      "description": "Master the core data structures used in computer science. Gain hands-on experience with linked lists, stacks, and queues. Become a data structure pro!",
+      "price": 12000,
+      "credit_hour": 4
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/3fL843Y/Rectangle-2.png",
+      "title": "Introduction to OOP Python",
+      "description": "Delve into object-oriented programming with Python. Learn classes, inheritance, and encapsulation for building robust applications. Create Pythonic wonders!",
+      "price": 13000,
+      "credit_hour": 3
+    },
+    {
+      "id": 6,
+      "cover": "https://i.ibb.co/phDRQCq/Rectangle-2-5.png",
+      "title": "Software Engineering",
+      "description": "Gain expertise in software engineering principles and practices. Explore requirements engineering, testing, and project management. Craft impeccable software!",
+      "price": 15000,
+      "credit_hour": 5
+    },
+    {
+      "id": 7,
+      "cover": "https://i.ibb.co/hdHdy8W/Rectangle-3-1.png",
+      "title": "AWS, Cloud Computing",
+      "description": "Learn about Amazon Web Services (AWS) and cloud computing technologies. Build scalable and reliable cloud-based solutions. Master the cloud with AWS!",
+      "price": 17000,
+      "credit_hour": 4
+    },
+    {
+      "id": 8,
+      "cover": "https://i.ibb.co/RNZPgy9/Rectangle-2-1.png",
+      "title": "Database (MySQL)",
+      "description": "Master the MySQL database management system. Design efficient databases and optimize queries for performance. Become a MySQL maestro!",
+      "price": 22000,
+      "credit_hour": 3
+    },
+    {
+      "id": 9,
+      "cover": "https://i.ibb.co/pLh4cPs/Rectangle-2-6.png",
+      "title": "Problem-Solving Part",
+      "description": "Enhance your problem-solving skills with real-world challenges. Tackle complex problems and develop creative solutions. Level up your problem-solving game!",
+      "price": 19000,
+      "credit_hour": 4
+    }
+  ]
+  
