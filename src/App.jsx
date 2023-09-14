@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
   const [bookMark, setBookMarks] = useState([])
   const [crediHour, setCreditHour] = useState(0)
+  const [remainingCredit, setRemainingCredit] = useState(20)
 
   const handleBookMarks = bookmark => {
     const isExist = bookMark.find((item) => item.id === bookmark.id)
@@ -20,10 +21,13 @@ function App() {
       toast('already added this course')
     } else {
         bookMark.forEach(item => {
-          creditHour = crediHour + item.credit_hour;
+          creditHour = creditHour + item.credit_hour;
         })
 
-      setCreditHour(creditHour)
+        const remaining = 20 - creditHour;
+
+        setCreditHour(creditHour)
+        setRemainingCredit(remaining)
 
       const newBookMarkCard = [...bookMark, bookmark]
       setBookMarks(newBookMarkCard)
@@ -36,7 +40,7 @@ function App() {
       <Header></Header>
       <div className='md:flex'>
         <Cards handleBookMarks={handleBookMarks}></Cards>
-        <Cart bookMark={bookMark} creditHour={crediHour}></Cart>
+        <Cart bookMark={bookMark} creditHour={crediHour} remainingCredit={remainingCredit}></Cart>
       </div>
       <ToastContainer></ToastContainer>
     </>
